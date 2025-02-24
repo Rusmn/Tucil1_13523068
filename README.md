@@ -7,7 +7,7 @@ Program Java yang menyelesaikan IQ Puzzler Pro dengan menempatkan beberapa piece
 - Membaca konfigurasi puzzle dari file teks
 - Output berwarna untuk visualisasi yang lebih baik
 - Kemampuan menyimpan solusi
-- Penulisa kinerja (waktu eksekusi dan kombinasi yang dicoba)
+- Penulisan waktu eksekusi dan kombinasi yang dicoba
 
 ## Requirements
 - Java Development Kit (JDK) 8 or higher
