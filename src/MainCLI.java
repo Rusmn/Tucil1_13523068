@@ -1,13 +1,13 @@
 import java.util.*;
 
-public class MainCLI {
-    public static void main(String[] args) {
+public class MainCLI{
+    public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         System.out.println("====================================================");
         System.out.println("                 SELAMAT DATANG :))");
         System.out.println("====================================================\n");
         
-        try {
+        try{
             String file;
             do {
                 System.out.print("Masukkan nama file input (.txt): ");
@@ -29,7 +29,7 @@ public class MainCLI {
             Solver solver = new Solver();
             char[][] solution = solver.solve(board, pieces);
             
-            if (solution.length > 0) {
+            if (solution.length > 0){
                 System.out.println("Solusi ditemukan pada kombinasi ke-" + (solver.getSolveAt()+1) + ":\n");
                 IOHandler.showSolution(solution);
                 
@@ -38,7 +38,7 @@ public class MainCLI {
                 if (input.equals("Y")) {
                     IOHandler.saveSolution(solution, "test/output_" + file);
                 }
-            } else {
+            } else{
                 System.out.println("Total waktu : " + (solver.getTime()) + "ms\n");
                 System.out.println("Jumlah pengujian : " + (solver.getTotalCheck()) + "\n");
                 System.out.println("Tidak ditemukan solusi untuk puzzle ini.\n");
@@ -46,9 +46,9 @@ public class MainCLI {
         
             System.out.println("====================================================\n");
             
-        } catch (Exception e) {
+        } catch (Exception e){
             System.out.println("Error: " + e.getMessage());
-        } finally {
+        } finally{
             scan.close();
         }
     }

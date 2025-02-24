@@ -1,36 +1,36 @@
 import java.util.*;
 
-public class Init {
-    public static Object[] initPuzzle(String file) {
+public class Init{
+    public static Object[] initPuzzle(String file){
         String[] input = IOHandler.readFile(file);
         
-        if (input == null || input.length < 2) {
+        if (input == null || input.length < 2){
             System.out.println("File input tidak valid. Minimal harus memiliki 2 baris");
             return null;
         }
-        
+
         String[] size = input[0].trim().split("\\s+");
         if (size.length != 3) {
             System.out.println("Format dimensi tidak valid. Harus berisi 3 angka");
             return null;
         }
         
-        try {
+        try{
             int rows = Integer.parseInt(size[0]);
             int cols = Integer.parseInt(size[1]);
             int totalPiece = Integer.parseInt(size[2]);
             
-            if (rows <= 0 || cols <= 0 || totalPiece <= 0) {
+            if (rows <= 0 || cols <= 0 || totalPiece <= 0){
                 System.out.println("Dimensi dan jumlah piece harus positif");
                 return null;
             }
             
             char[][] board = new char[rows][cols];
-            for (int i = 0; i < rows; i++) {
+            for (int i = 0; i < rows; i++){
                 Arrays.fill(board[i], '.');
             }
             
-            if (!input[1].trim().equals("DEFAULT")) {
+            if (!input[1].trim().equals("DEFAULT")){
                 System.out.println("Mode tidak valid. Saat ini hanya mendukung mode DEFAULT");
                 return null;
             }
@@ -40,7 +40,7 @@ public class Init {
             int idxPiece = 0;
             char pieceChar = ' ';
 
-            for (int i = 2; i < input.length; i++) {
+            for (int i = 2; i < input.length; i++){
                 String line = input[i];
                 
                 if (line.isEmpty()) continue;
@@ -54,7 +54,7 @@ public class Init {
                     }
                 }
                 
-                if (first != pieceChar && first != ' ') {
+                if (first != pieceChar && first != ' '){
                     if (!tempLine.isEmpty()) {
                         pieces[idxPiece] = buatPiece(tempLine);
                         idxPiece++;
@@ -66,12 +66,12 @@ public class Init {
                 tempLine.add(line);
             }
             
-            if (!tempLine.isEmpty()) {
+            if (!tempLine.isEmpty()){
                 pieces[idxPiece] = buatPiece(tempLine);
                 idxPiece++;
             }
             
-            if (idxPiece != totalPiece) {
+            if (idxPiece != totalPiece){
                 System.out.println("Jumlah piece tidak sesuai dengan input");
                 return null;
             }
@@ -84,14 +84,14 @@ public class Init {
         }
     }
     
-    private static char[][] buatPiece(ArrayList<String> lines) {
+    private static char[][] buatPiece(ArrayList<String> lines){
         if (lines.isEmpty()) {
             System.out.println("Piece kosong");
             return null;
         }
         
         int maxLen = 0;
-        for (int i = 0; i < lines.size(); i++) {
+        for (int i = 0; i < lines.size(); i++){
             maxLen = Math.max(maxLen, lines.get(i).length());
         }
         
@@ -101,9 +101,9 @@ public class Init {
             Arrays.fill(piece[i], '.');
         }
         
-        for (int i = 0; i < lines.size(); i++) {
+        for (int i = 0; i < lines.size(); i++){
             String line = lines.get(i);
-            for (int j = 0; j < line.length(); j++) {
+            for (int j = 0; j < line.length(); j++){
                 char c = line.charAt(j);
                 piece[i][j] = Character.isWhitespace(c) ? '.' : c;
             }
