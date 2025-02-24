@@ -46,14 +46,13 @@ Pastikan Anda memiliki struktur direktori berikut:
 
 ## Cara Menjalankan Program
 
-1. Setelah kompilasi, ganti ke direktori `bin`
-2. Jalankan program menggunakan:
+1. Jalankan program menggunakan:
 ```bash
-java MainCLI
+java -cp bin MainCLI
 ```
-3. Saat diminta, masukkan nama file input Anda (harus berada di direktori `test`)
-4. Program akan mencari solusi dan menampilkannya jika ditemukan
-5. Anda dapat memilih untuk menyimpan solusi ke file saat diminta
+2. Saat diminta, masukkan nama file input Anda (harus berada di direktori `test`)
+3. Program akan mencari solusi dan menampilkannya jika ditemukan
+4. Anda dapat memilih untuk menyimpan solusi ke file saat diminta
 
 ## Format File Input
 File input harus mengikuti format ini:
