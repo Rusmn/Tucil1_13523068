@@ -1,7 +1,7 @@
-# IQ PUZZLER PRO
+# IQ Puzzler Pro
 
 ## Deskripsi
-Program Java yang menyelesaikan IQ Puzzle Pro dengan menempatkan beberapa piece pada papan. Program ini menggunakan pendekatan algoritma brute force untuk menemukan solusi yang valid dengan mencoba berbagai orientasi piece (rotasi dan pencerminan) dan posisi pada papan. Setiap piece direpresentasikan oleh karakter unik (alfabet), dan solusi akhir menampilkan piece-piece dalam warna berbeda.
+Program Java yang menyelesaikan IQ Puzzler Pro dengan menempatkan beberapa piece pada papan. Program ini menggunakan pendekatan algoritma brute force untuk menemukan solusi yang valid dengan mencoba berbagai orientasi piece (rotasi dan pencerminan) dan posisi pada papan. Setiap piece direpresentasikan oleh karakter unik (alfabet), dan solusi akhir menampilkan piece-piece dalam warna berbeda.
 
 ## Fitur
 - Membaca konfigurasi puzzle dari file teks
