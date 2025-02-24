@@ -18,6 +18,7 @@ Untuk mengkompilasi program, clone repository ini terlebih dahulu.
 
 ```bash
 git clone https://github.com/Rusmn/Tucil1_13523068.git
+cd Tucil1_13523068
 ```
 
 lalu kompilasi program.
