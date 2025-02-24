@@ -175,6 +175,10 @@ public class Solver {
         return solveAt;
     }
 
+    public long getTotalCheck() {
+        return count;
+    }
+
     public double getTime() {
         long elapsed = System.nanoTime() - startTime;
         return elapsed / 1_000_000.0;

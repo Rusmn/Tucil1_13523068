@@ -40,7 +40,7 @@ public class MainCLI {
                 }
             } else {
                 System.out.println("Total waktu : " + (solver.getTime()) + "ms\n");
-                System.out.println("Jumlah pengujian : " + (solver.getSolveAt()+1) + "\n");
+                System.out.println("Jumlah pengujian : " + (solver.getTotalCheck()) + "\n");
                 System.out.println("Tidak ditemukan solusi untuk puzzle ini.\n");
             }
         
