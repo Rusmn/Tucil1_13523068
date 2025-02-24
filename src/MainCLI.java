@@ -3,8 +3,9 @@ import java.util.*;
 public class MainCLI {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("               SELAMAT DATANG :))");
-        System.out.println("===============================================\n");
+        System.out.println("====================================================");
+        System.out.println("                 SELAMAT DATANG :))");
+        System.out.println("====================================================\n");
         
         try {
             String file;
@@ -38,10 +39,12 @@ public class MainCLI {
                     IOHandler.saveSolution(solution, "test/output_" + file);
                 }
             } else {
+                System.out.println("Total waktu : " + (solver.getTime()) + "ms\n");
+                System.out.println("Jumlah pengujian : " + (solver.getSolveAt()+1) + "\n");
                 System.out.println("Tidak ditemukan solusi untuk puzzle ini.\n");
             }
         
-            System.out.println("===============================================\n");
+            System.out.println("====================================================\n");
             
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());

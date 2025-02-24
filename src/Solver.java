@@ -174,6 +174,11 @@ public class Solver {
     public long getSolveAt() {
         return solveAt;
     }
+
+    public double getTime() {
+        long elapsed = System.nanoTime() - startTime;
+        return elapsed / 1_000_000.0;
+    }
     // private void printBoard(char[][] board) {
     //     for (int i = 0; i < board.length; i++) {
     //         for (int j = 0; j < board[i].length; j++) {
