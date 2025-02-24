@@ -17,7 +17,7 @@ Program Java yang menyelesaikan IQ Puzzler Pro dengan menempatkan beberapa piece
 Untuk mengkompilasi program, clone repository ini terlebih dahulu.
 
 ```bash
-git clone 
+git clone https://github.com/Rusmn/Tucil1_13523068.git
 ```
 
 lalu kompilasi program.
