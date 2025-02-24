@@ -3,6 +3,8 @@ import java.util.*;
 public class MainCLI {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        System.out.println("               SELAMAT DATANG :))");
+        System.out.println("===============================================\n");
         
         try {
             String file;
@@ -38,6 +40,8 @@ public class MainCLI {
             } else {
                 System.out.println("Tidak ditemukan solusi untuk puzzle ini.\n");
             }
+        
+            System.out.println("===============================================\n");
             
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
