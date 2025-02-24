@@ -14,7 +14,13 @@ Program Java yang menyelesaikan IQ Puzzler Pro dengan menempatkan beberapa piece
 - Terminal/Console that supports ANSI color codes
 
 ## Kompilasi
-Untuk mengkompilasi program, navigasikan ke direktori root proyek dan jalankan:
+Untuk mengkompilasi program, clone repository ini terlebih dahulu.
+
+```bash
+git clone 
+```
+
+lalu kompilasi program.
 
 ```bash
 javac -d bin src/*.java
